@@ -1,0 +1,10 @@
+Build a trading bot for the 'Tiny Bot, Easy $2: Beat Buy-and-Hold on Solana' competition on make.fun. The bot reads hourly bars for 7 Solana tokens (FARTCOIN, JITOSOL, POPCAT, RAY, SOL, WETH, WIF) and decides when to hold each token vs USDC. It should beat the buy-and-hold baseline.
+
+Requirements:
+- Use Python 3.13
+- Use the makefun_bars.py SDK
+- Strategy: MACD trend filter with CCI for entry timing
+- Beat buy-and-hold baseline (-869 USDC on dev window)
+- Meet guardrails: min 8 trades, max 25% drawdown
+- Deterministic (no randomness, no clock)
+- Under 50 lines if possible
